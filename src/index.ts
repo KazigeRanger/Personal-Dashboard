@@ -1,3 +1,5 @@
-import updateClock from "./modules/TypeScript/Setters/updateClock";
+import updateClock from "./modules/TypeScript/Setters/updateClock.js";
 
-updateClock();
+window.addEventListener("load", function() {
+    updateClock();
+});

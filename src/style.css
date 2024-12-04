@@ -1,4 +1,11 @@
 h1 {
     font-family: "parkinsans";
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 4em;
+    color: whitesmoke;
+}
+
+body {
+    /* background-image: url(./../images/backgrounds/sunsetrise-gradient.png); */
+    background-size: cover;
 }

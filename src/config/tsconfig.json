@@ -3,7 +3,7 @@
         "rootDir": "..",
         "target": "ES6",
         "lib": ["ES6", "DOM"],
-        "module": "CommonJS"
+        "module": "ES6"
     },
     "include": ["../**/*"],
     "exclude": []
