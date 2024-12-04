@@ -1,0 +1,1 @@
+alias tscc="tsc --project ../tsconfig.json"
