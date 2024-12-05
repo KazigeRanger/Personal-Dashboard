@@ -8,8 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 export default getQuote;
-function getQuote(category) {
-    return __awaiter(this, void 0, void 0, function* () {
+function getQuote() {
+    return __awaiter(this, arguments, void 0, function* (category = "inspirational") {
         const apiKey = "DINwyGkOgjKTRPVMYDXDew==NhQn2RxfLgkRqr3G";
         const apiSource = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
         try {
