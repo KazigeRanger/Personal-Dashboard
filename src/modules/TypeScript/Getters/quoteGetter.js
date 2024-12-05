@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+export default getQuote;
 function getQuote(category) {
     return __awaiter(this, void 0, void 0, function* () {
         const apiKey = "DINwyGkOgjKTRPVMYDXDew==NhQn2RxfLgkRqr3G";
@@ -26,4 +27,3 @@ function getQuote(category) {
         }
     });
 }
-export {};
