@@ -1,1 +1,1 @@
-alias tscc="tsc --project ../tsconfig.json"
+alias tscall="tsc --project ./config/tsconfig.json"
