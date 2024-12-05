@@ -1,11 +1,26 @@
 h1 {
     font-family: "parkinsans";
     font-weight: 500;
+}
+
+#page-title {
     font-size: 4em;
     color: whitesmoke;
+    margin: 0.6em 0.8em;
+    display: inline-block;
+}
+
+h2 {
+    font-family: "Lora";
+}
+
+#clock {
+    color: whitesmoke;
+    font-size: 3.5em;
+    float: inline-end;
+    margin: 1em 1em;
 }
 
 body {
-    /* background-image: url(./../images/backgrounds/sunsetrise-gradient.png); */
     background-size: cover;
 }

@@ -1,24 +1,28 @@
-import getTime from "../Getters/getTime.js";
-
 export default updateClock;
 
-async function updateClock(): Promise<void> {
+function updateClock(): void {
     // Get the time through an api
-    const apiResponse = getTime();
-    const apiResponseJSON = await apiResponse;
+    const now = new Date();
+
+    // Store the clock header in a variable
+    const clock = document.getElementById("clock");
+    if (clock == null) {
+        throw Error;
+    }
+    clock.textContent = now.getMinutes() < 10 ? `${now.getHours()}:0${now.getMinutes()}` : `${now.getHours()}:${now.getMinutes()}`;
     
     // Store the body element in a variable
     const body = document.querySelector("body");
     if (body == null) {
         throw Error;
     }
-    if (parseInt(apiResponseJSON.hour, 10) >= 17 && parseInt(apiResponseJSON.hour, 10) <= 20) {
+    if (now.getHours() >= 17 && now.getHours() <= 20) {
         body.style.backgroundImage = "url(../images/backgrounds/sunsetrise-gradient.png)";
-    } else if (parseInt(apiResponseJSON.hour, 10) <= 16 && parseInt(apiResponseJSON.hour, 10) >= 11) {
+    } else if (now.getHours() <= 16 && now.getHours() >= 11) {
         body.style.backgroundImage = "url(../images/backgrounds/day-gradient.png)";
-    } else if (parseInt(apiResponseJSON.hour, 10) <= 10 && parseInt(apiResponseJSON.hour, 10) >= 7) {
+    } else if (now.getHours() <= 10 && now.getHours() >= 7) {
         body.style.backgroundImage = "url(../images/backgrounds/sunsetrise-gradient.png)";
-    } else if (parseInt(apiResponseJSON.hour, 10) >= 21 || parseInt(apiResponseJSON.hour, 10) <= 6) {
+    } else if (now.getHours() >= 21 || now.getHours() <= 6) {
         body.style.backgroundImage = "url(../images/backgrounds/night-gradient.png)";
     }
 }
