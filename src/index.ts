@@ -1,4 +1,5 @@
 import updateClock from "./modules/TypeScript/Setters/updateClock.js";
+import getQuote from "./modules/TypeScript/Getters/quoteGetter.js";
 
 // Set the clock to the correct time when the window loads.
 // Also set an interval for when to update the clock.
