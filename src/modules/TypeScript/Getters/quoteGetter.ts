@@ -1,5 +1,7 @@
 import QUOTEAPIRESPONSE from "../../../interfaces/quoteApiResponse";
 
+export default getQuote;
+
 async function getQuote(category: string): Promise<QUOTEAPIRESPONSE> {
     const apiKey = "DINwyGkOgjKTRPVMYDXDew==NhQn2RxfLgkRqr3G";
     const apiSource = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
