@@ -1,5 +1,7 @@
 import updateClock from "./modules/TypeScript/Setters/updateClock.js";
 
+// Set the clock to the correct time when the window loads.
+// Also set an interval for when to update the clock.
 window.addEventListener("load", function() {
     updateClock();
     const now = new Date();

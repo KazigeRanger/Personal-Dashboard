@@ -1,26 +1,37 @@
+body {
+    background-size: cover;
+}
+
 h1 {
     font-family: "parkinsans";
     font-weight: 500;
 }
 
-#page-title {
-    font-size: 4em;
-    color: whitesmoke;
+h2 {
+    font-family: "parkinsans";
+}
+
+.title-subtitle-div {
     margin: 0.6em 0.8em;
     display: inline-block;
 }
 
-h2 {
-    font-family: "Lora";
+#page-title {
+    font-size: 4em;
+    color: whitesmoke;
+    margin: 0.6em auto 0 auto;
+}
+
+#page-subtitle {
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 0;
 }
 
 #clock {
+    font-family: "Lora";
     color: whitesmoke;
     font-size: 3.5em;
     float: inline-end;
     margin: 1em 1em;
-}
-
-body {
-    background-size: cover;
 }
