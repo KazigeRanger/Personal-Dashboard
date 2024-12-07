@@ -18,9 +18,9 @@ function updateClock(): void {
     }
     if (now.getHours() >= 17 && now.getHours() <= 20) {
         body.style.backgroundImage = "url(../images/backgrounds/sunsetrise-gradient.png)";
-    } else if (now.getHours() <= 16 && now.getHours() >= 11) {
+    } else if (now.getHours() <= 16 && now.getHours() >= 10) {
         body.style.backgroundImage = "url(../images/backgrounds/day-gradient.png)";
-    } else if (now.getHours() <= 10 && now.getHours() >= 7) {
+    } else if (now.getHours() <= 9 && now.getHours() >= 7) {
         body.style.backgroundImage = "url(../images/backgrounds/sunsetrise-gradient.png)";
     } else if (now.getHours() >= 21 || now.getHours() <= 6) {
         body.style.backgroundImage = "url(../images/backgrounds/night-gradient.png)";
