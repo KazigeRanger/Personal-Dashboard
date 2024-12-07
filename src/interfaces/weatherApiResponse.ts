@@ -11,4 +11,4 @@ interface WEATHERAPIRESPONSE {
     feels_like: number,
     sunrise: number,
     max_temp: number
-}
+};
