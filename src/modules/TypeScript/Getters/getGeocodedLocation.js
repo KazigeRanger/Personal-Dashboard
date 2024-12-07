@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 export default getGeocodedLocation;
 function getGeocodedLocation() {
-    return __awaiter(this, arguments, void 0, function* (city = "Amsterdam", country = "The Netherlands") {
+    return __awaiter(this, arguments, void 0, function* (city = "Naarden", country = "NL") {
         const apiKey = "DINwyGkOgjKTRPVMYDXDew==NhQn2RxfLgkRqr3G";
         const apiSource = `https://api.api-ninjas.com/v1/geocoding?city=${city}&country=${country}`;
         try {

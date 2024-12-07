@@ -2,7 +2,7 @@ import GEOCODERAPIRESPONSE from "../../../interfaces/geocoderApiResponse";
 
 export default getGeocodedLocation;
 
-async function getGeocodedLocation(city: string = "Amsterdam", country: string = "The Netherlands"): Promise<GEOCODERAPIRESPONSE> {
+async function getGeocodedLocation(city: string = "Naarden", country: string = "NL"): Promise<GEOCODERAPIRESPONSE> {
     const apiKey: string = "DINwyGkOgjKTRPVMYDXDew==NhQn2RxfLgkRqr3G";
     const apiSource: string = `https://api.api-ninjas.com/v1/geocoding?city=${city}&country=${country}`
 
