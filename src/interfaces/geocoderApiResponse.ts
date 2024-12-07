@@ -4,5 +4,6 @@ interface GEOCODERAPIRESPONSE {
     name: string,
     latitude: number,
     longitude: number, 
-    country: string
+    country: string,
+    state: string
 }
