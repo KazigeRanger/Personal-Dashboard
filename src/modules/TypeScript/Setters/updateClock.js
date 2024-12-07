@@ -25,4 +25,7 @@ function updateClock() {
     else if (now.getHours() >= 21 || now.getHours() <= 6) {
         body.style.backgroundImage = "url(../images/backgrounds/night-gradient.png)";
     }
+    else {
+        body.style.backgroundImage = "url(../images/backgrounds/day-gradient.png)";
+    }
 }
