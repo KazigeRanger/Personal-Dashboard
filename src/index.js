@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     getQuote("happiness")
         .then((resolvedResponse) => {
-        console.log(resolvedResponse);
         subtitle.textContent = `"${resolvedResponse[0].quote}" - ${resolvedResponse[0].author}`;
     })
         .catch(error => console.error("Error caught: ", error));
