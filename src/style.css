@@ -1,5 +1,7 @@
 body {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -36,4 +38,36 @@ h2 {
     font-size: 3.5em;
     float: inline-end;
     margin: 1em 1em;
+}
+
+.weather {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); Lichte rand */
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+}
+
+.weather-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.weather-grid-item {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+}
+
+.weather-subheaders {
+    color: whitesmoke;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    margin: 0.5em;
 }
