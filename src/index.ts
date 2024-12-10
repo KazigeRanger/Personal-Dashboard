@@ -1,19 +1,21 @@
 import updateClock from "./modules/TypeScript/Setters/updateClock.js";
 import getQuote from "./modules/TypeScript/Getters/getQuote.js";
+import getGeoLocation from "./modules/TypeScript/Getters/getGeoLocation.js";
+import getWeather from "./modules/TypeScript/Getters/getWeather.js";
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     // Get a quote to display
-//     const subtitle = document.getElementById("page-subtitle");
-//     if (subtitle === null) {
-//         console.error("Failed to get subtitle element.");
-//         return;
-//     }
-//     getQuote("happiness")
-//     .then((resolvedResponse) => {
-//         subtitle.textContent = `"${resolvedResponse[0].quote}" - ${resolvedResponse[0].author}`;
-//     })
-//     .catch(error => console.error("Error caught: ", error));
-// });
+const temperatureText = document.getElementById("temperature");
+const perceivedTemperatureText = document.getElementById("perceived-temperature");
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const weather = await getWeather();
+    console.log(weather);
+
+    if (temperatureText === null || perceivedTemperatureText === null) {
+        throw new Error("Failed to access temperature and perceived-temperature HTML elements.");
+    }
+    temperatureText.innerHTML = `Current temperature: ${weather.temp} °C`;
+    perceivedTemperatureText.innerHTML = `Perceived temperature: ${weather.feels_like} °C`;
+});
 
 // Do some nice things when the window loads.
 window.addEventListener("load", function() {
